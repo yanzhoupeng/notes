@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>博客</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+  <!-- set theme stylesheet the corresponding title, you can set multiple  -->
+  <link rel="stylesheet" title="light" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+  <link rel="stylesheet" title="dark" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css">
+
+  <!-- link docsify-dark-switch.css  -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-switch/dist/docsify-dark-switch.css">
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/light.css">
+
+  <style type="text/css">
+    /* navs fixed 顶部导航fixed固定*/
+    .app-nav {
+      position: fixed;
+    }
+
+    .docsify-dark-switch button {
+      top: 5px
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      themeColor: '#ff0000', // 设置主题色
+
+      name: '',
+      repo: 'https://github.com/yanzhoupeng',
+
+      loadSidebar: true,
+      coverpage: true,
+      relativePath: true,
+
+      pagination: {
+        previousText: '上一章节',
+        nextText: '下一章节',
+        crossChapter: false,
+        crossChapterText: true,
+      },
+
+      alias: {
+        '/前端面试/.*/_sidebar.md': '/前端面试/_sidebar.md',
+      },
+
+      search: {
+        maxAge: 1,
+        placeholder: '🔍 搜索',
+        noData: '找不到结果',
+        depth: 6,
+        hideOtherSidebarContent: true, // 建议设置true，搜索时搜索结果跟侧边栏混在一起了很不友好
+        pathNamespaces: ['/zh', '/'], // 如果是多语言，建议设置此配置，搜索时就会只在当前语言下搜索
+      },
+
+      loadNavbar: true,
+      toc: {
+        tocMaxLevel: 5,
+        target: 'h2, h3, h4, h5, h6',
+        ignoreHeaders: ['<!-- {docsify-ignore} -->', '<!-- {docsify-ignore-all} -->']
+      },
+
+      count: {
+        countable: true,
+        fontsize: '0.9em',
+        color: 'rgb(90,90,90)',
+        language: 'chinese'
+      },
+
+      darkSwitch: {
+        fixed: true, // switch按钮fixed固定
+      },
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-jsx.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.25.0/components/prism-python.min.js"></script>
+
+  <!-- 复制到剪贴板 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+  <!-- 字数统计 -->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+
+  <!-- 分页导航插件 -->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify-dark-switch/dist/docsify-dark-switch.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>
+</body>
+
+</html>
