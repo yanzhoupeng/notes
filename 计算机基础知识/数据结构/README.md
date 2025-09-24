@@ -12,10 +12,6 @@
 
 ## 参考资料
 
-### 视频资料
-
-[数据结构与算法 Python 版](https://www.icourse163.org/course/PKU-1206307812)
-
 ### 参考书目
 
 - [Hello 算法](https://www.hello-algo.com/chapter_hello_algo/)
