@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端面试/JS.md",
+                "file": "前端面试/_sidebar.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JS"
+              "title": "_sidebar"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "话术"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端面试/话术.md",
+                "file": "前端面试/_sidebar.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "话术 的大纲"
+              "title": "_sidebar 的大纲"
             }
           }
         ],
@@ -198,11 +197,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "af399ff8d71d759f",
+  "active": "8cf294fc0bfedd45",
   "lastOpenFiles": [
-    "前端面试/Vue.md",
-    "前端面试/话术.md",
     "前端面试/JS.md",
+    "前端面试/设计模式.md",
+    "前端面试/话术.md",
+    "前端面试/Vue.md",
     "前端面试/_sidebar.md",
     "前端面试/网络.md",
     "前端面试/常用库.md",
@@ -240,7 +240,6 @@
     "后端/README.md",
     "后端/Django",
     "后端",
-    "python/sql.md",
     "python/SQL"
   ]
 }

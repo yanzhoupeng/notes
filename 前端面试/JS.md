@@ -207,3 +207,9 @@ sessionstorage：单页面存储，由于现在都是单页应用，所以一般
 
 后端简单实现
 从一个网站访问另一个网站时携带上 token，由后端进行校验
+
+#### URL encode 和 base64 encode
+
+url encode：主要用于对URL中的特殊字符进行转义，确保URL的合法性和安全性。
+base64 encode：将二进制数据转换为ASCII字符串，便于在文本协议（如HTTP、邮件）中传输
+
