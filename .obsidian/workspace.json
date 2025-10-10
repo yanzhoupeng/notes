@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "前端面试/_sidebar.md",
+                "file": "前端面试/JS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_sidebar"
+              "title": "JS"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "话术"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端面试/_sidebar.md",
+                "file": "前端面试/Vue.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "_sidebar 的大纲"
+              "title": "Vue 的大纲"
             }
           }
         ],
@@ -197,13 +198,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "8cf294fc0bfedd45",
+  "active": "ac949ee26237ea48",
   "lastOpenFiles": [
     "前端面试/JS.md",
-    "前端面试/设计模式.md",
-    "前端面试/话术.md",
     "前端面试/Vue.md",
+    "前端面试/话术.md",
     "前端面试/_sidebar.md",
+    "前端面试/设计模式.md",
     "前端面试/网络.md",
     "前端面试/常用库.md",
     "前端面试/CSS.md",
