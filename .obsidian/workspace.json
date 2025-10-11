@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8cf294fc0bfedd45",
+            "id": "ac949ee26237ea48",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "ac949ee26237ea48",
+            "id": "7dffeb30104e3096",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "前端面试/Vue.md",
+                "file": "前端面试/话术.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Vue 的大纲"
+              "title": "话术 的大纲"
             }
           }
         ],
@@ -198,11 +198,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ac949ee26237ea48",
+  "active": "af399ff8d71d759f",
   "lastOpenFiles": [
-    "前端面试/JS.md",
     "前端面试/Vue.md",
     "前端面试/话术.md",
+    "前端面试/JS.md",
     "前端面试/_sidebar.md",
     "前端面试/设计模式.md",
     "前端面试/网络.md",
