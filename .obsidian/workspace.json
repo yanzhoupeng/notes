@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "7dffeb30104e3096",
+            "id": "ee6ac971ad599fb0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,7 +36,7 @@
             }
           },
           {
-            "id": "af399ff8d71d759f",
+            "id": "7dffeb30104e3096",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -198,11 +198,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "af399ff8d71d759f",
+  "active": "7dffeb30104e3096",
   "lastOpenFiles": [
     "前端面试/Vue.md",
-    "前端面试/话术.md",
     "前端面试/JS.md",
+    "前端面试/话术.md",
+    "mie/前端高级/TypeScript.md",
+    "前端高级/_sidebar.md",
+    "mie/前端高级/2.1 unocss.md",
+    "mie/前端高级",
+    "mie",
+    "前端高级/2.2 scss.md",
+    "前端高级/2.1 unocss.md",
+    "前端高级/2 CSS.md",
+    "前端高级/1 HTML.md",
+    "前端高级/_sidebar 1.md",
+    "前端高级/TypeScript.md",
     "前端面试/_sidebar.md",
     "前端面试/设计模式.md",
     "前端面试/网络.md",
@@ -213,7 +224,6 @@
     "前端面试/ES6.md",
     "前端面试/README.md",
     "前端高级/5 Element.md",
-    "前端高级/2.2 scss.md",
     "计算机基础知识/数据结构/线性结构.md",
     "计算机基础知识/数据结构/_sidebar.md",
     "英语/学习规划.md",
@@ -223,24 +233,14 @@
     "(/计算机基础知识/数据结构",
     "(/计算机基础知识",
     "(",
-    "计算机基础知识/数据结构/网状结构.md",
-    "计算机基础知识/数据结构/树型结构.md",
-    "计算机基础知识/数据结构/复杂度分析.md",
     "images/Pasted image 20250828113555.png",
     "images/Pasted image 20250828113243.png",
     "images/Pasted image 20250828112639.png",
     "英语/English Grammar in User",
     "英语",
-    "后端/python.md",
-    "后端/Django/Django.md",
     "后端/Django/Pasted image 20250613222801.png",
     "后端/Django/Pasted image 20250613222656.png",
     "后端/Django/Pasted image 20250613175557.png",
-    "后端/sql.md",
-    "后端/_sidebar.md",
-    "后端/README.md",
-    "后端/Django",
-    "后端",
-    "python/SQL"
+    "后端/Django"
   ]
 }

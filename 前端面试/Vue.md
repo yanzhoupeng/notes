@@ -30,8 +30,6 @@ SPA 首页优化：减小首页文件体积、路由懒加载、图片懒加载�
 
 v-if 和 v-show 都可以控制元素的显示隐藏，区别在于，v-if 的本质是对 DOM 元素的挂载和卸载，v-show 则是通过 display 属性控制元素的显示隐藏。因此，v-if 会触发元素和子组件的生命周期事件，v-show 不会，同时 v-if 的性能会比 v-show 低一些
 
-
-
 #### v-if 和 v-for
 
 v-for 的优先级比 v-if 的高。同时两者不建议一起使用，可以通过 template 标签包裹住 v-for 的元素，不然会造成性能上的浪费
@@ -220,3 +218,88 @@ vue3 中采用了 proxy，替代了 vue2 中的 object.defineProperty()，解决
 vue3 通过调度器进行批量更新，避免重复渲染
 #### nextTick
 `nextTick`是Vue提供的一个异步方法，用于在下次DOM更新循环结束之后执行延迟回调。它的主要作用是**确保在DOM更新完成后执行某些操作**。
+
+#### el-table 组件封装
+
+```vue
+<template>
+ <el-table :data="tableData" style="width: 100%" v-bind="$attrs">
+   <el-table-column
+     v-for="(column, index) in tableHeaders"
+     :key="index"
+     v-bind="column"
+   >
+     <template v-if="$slots[column.slot]" #default="scope">
+       <slot :name="column.slot" :row="scope.row"></slot>
+     </template>
+   </el-table-column>
+ </el-table>
+</template>
+```
+
+#### el-form 封装
+
+```vue
+<template>
+ <el-form :model="formData" ref="formRef" label-width="120px">
+   <el-form-item
+     v-for="(item, index) in formConfig"
+     :key="index"
+     :label="item.label"
+     :prop="item.prop"
+     :rules="item.rules"
+   >
+     <!-- 根据类型动态渲染组件 -->
+     <el-input
+       v-if="item.type === 'input'"
+       v-model="formData[item.prop]"
+       :placeholder="item.placeholder"
+     />
+     <el-select
+       v-if="item.type === 'select'"
+       v-model="formData[item.prop]"
+       :placeholder="item.placeholder"
+     >
+       <el-option
+         v-for="option in item.options"
+         :key="option.value"
+         :label="option.label"
+         :value="option.value"
+       />
+     </el-select>
+   </el-form-item>
+   <div>
+     <el-button type="primary" @click="submitForm">提交</el-button>
+     <el-button @click="resetForm">重置</el-button>
+   </div>
+ </el-form>
+</template>
+<script>
+export default {
+ props: {
+   formConfig: {
+     type: Array,
+     required: true,
+   },
+   formData: {
+     type: Object,
+     required: true,
+   },
+ },
+ methods: {
+   submitForm() {
+     this.$refs.formRef.validate((valid) => {
+       if (valid) {
+         this.$emit("submit", this.formData);
+       } else {
+         console.error("表单验证失败");
+       }
+     });
+   },
+   resetForm() {
+     this.$refs.formRef.resetFields();
+   },
+ },
+};
+</script>
+```
