@@ -11,7 +11,7 @@
 
 ### TypeScript 编译
 
->仅了解，直接使用vue3即可
+> 仅了解，直接使用 vue3 即可
 
 ```shell
 # 初始化项目
@@ -77,27 +77,27 @@ const fn = (x: number, y: number): number => {
 #### 类型总览
 
 - JavaScript 自带
-	- string
-	- number
-	- boolean
-	- null
-	- undefined
-	- bigint
-	- symbol
-	- object
-	    - 包括 Array Function Data Error 等对象
+  - string
+  - number
+  - boolean
+  - null
+  - undefined
+  - bigint
+  - symbol
+  - object
+    - 包括 Array Function Data Error 等对象
 - TypeScript 新增的类型
-	- any
-	- never
-	- unknown
-	- void
-	- tuple
-	- 元组
-	- enum
-	- 枚举
+  - any
+  - never
+  - unknown
+  - void
+  - tuple
+  - 元组
+  - enum
+  - 枚举
 - 用于自定义类型的关键字
-	- type
-	- interface
+  - type
+  - interface
 
 #### 注意点
 
@@ -115,7 +115,7 @@ const fn = (x: number, y: number): number => {
 
 #### any
 
->anyscript（不是
+> anyscript（不是
 
 any 类型的变量可以赋值给**任意**类型的变量
 
@@ -155,9 +155,9 @@ const fn = (num: number): void => {
 ```
 
 - void 类型 !== undefined
-	- **void 类型的函数返回值不应当被使用进行任何操作**
-	- 但是 undefined 类型的函数返回值可以被使用
-	- 从抽象的角度来说，void 是 undefined 的超集
+  - **void 类型的函数返回值不应当被使用进行任何操作**
+  - 但是 undefined 类型的函数返回值可以被使用
+  - 从抽象的角度来说，void 是 undefined 的超集
 
 #### object
 
@@ -165,7 +165,7 @@ const fn = (num: number): void => {
 
 - `object` 可以存储非基础数据类型
 - `Object` 可以存储能调用到 Object 方法的所有类型。即除了 null 和 undefined 之外的所有类型
-	- 自动装箱
+  - 自动装箱
 
 **对象类型限制**
 
@@ -299,19 +299,20 @@ class Person {
 **修饰符**
 
 - public
-	公开成员，在类的内部、子类、外部均可以使用
+  公开成员，在类的内部、子类、外部均可以使用
 - protected
-	受保护的成员，类的内部、子类可以使用
+  受保护的成员，类的内部、子类可以使用
 - private
-	私有成员，只能在类内部访问
+  私有成员，只能在类内部访问
 - readonly
-	只读成员
+  只读成员
 
 #### 抽象类
 
 > 抽象类是一种无法被实例化的类，主要目的是定义类的结构和方法，类中可以包含普通方法和抽象方法，其派生类中必须要对抽象方法进行实现
 
 **最佳实践**
+
 - 定义通用接口
 - 提供基础实现
 - 确保关键实现
@@ -328,7 +329,7 @@ abstract class Package {
     );
   }
 }
-  
+
 // 实现类
 class StandardPackage extends Package {
   constructor(weight: number, public unit: number) {
@@ -338,7 +339,7 @@ class StandardPackage extends Package {
     return this.weight * this.unit; // 标准快递每公斤5元
   }
 }
-  
+
 const standardPackage = new StandardPackage(2, 5);
 standardPackage.getPackageMsg();
 ```
@@ -346,7 +347,8 @@ standardPackage.getPackageMsg();
 #### interface
 
 **最常使用的定义类型的方式**
-- 定义对象格式：描述数据模型、API相应格式、配置对象
+
+- 定义对象格式：描述数据模型、API 相应格式、配置对象
 - 类的契约
 - 自动合并：用于扩展第三方库的类型
 
@@ -363,8 +365,8 @@ interface ObjInterface {
 
 - 两者在定义对象时可以等价替换
 - 不同点
-	- interface 更常用于定义类和对象的结构，支持合并、继承
-	- type 可以进行类型别名、类型交叉、联合类型的声明
+  - interface 更常用于定义类和对象的结构，支持合并、继承
+  - type 可以进行类型别名、类型交叉、联合类型的声明
 
 ### 泛型
 
@@ -374,7 +376,7 @@ interface ObjInterface {
 const fn = <T, U>(data: T, data2: U): T | U => {
   return Math.random() > 0.5 ? data : data2;
 };
-  
+
 const res = fn<string, number>('hello', 42);
 ```
 
@@ -393,7 +395,7 @@ interface EmployeeInterface {
   id: number;
   department: string;
 }
-  
+
 const p: PersonInterface<EmployeeInterface> = {
   name: 'Alice',
   age: 30,
